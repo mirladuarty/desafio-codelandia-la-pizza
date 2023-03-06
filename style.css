@@ -38,6 +38,19 @@ header h1 {
     color: var(--clr-white);
 }
 
+main {
+    display: grid;
+    place-content: center;
+
+    padding: 40px 0;
+    row-gap: 70px;
+}
+
+main h3 {
+    text-align: center;
+    font-size: 22px;
+}
+
 .container-pizzas {
     display: grid;
     place-content: center;
