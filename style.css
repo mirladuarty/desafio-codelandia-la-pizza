@@ -6,6 +6,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --clr-green: #5C913B;
+    --clr-yellow: #FFA200;
+    --clr-red: #CF3031;
+    --clr-white: #FEF6F4;
+    --clr-dark-gray: #2E2E2E;
+    --clr-grey: #616161;
+    --transition: all .1s;
+}
+
 html {
     font-family: 'Sora', sans-serif;
 }
@@ -76,6 +86,18 @@ p, h4 {
     background: #FCFCFC;
 }
 
-.content p {
+.about > .content p {
     text-align: center;
 }
+.about > .content button {
+    background: var(--clr-yellow);
+    border-radius: 25px;
+    padding: 8px 20px;
+    border: transparent;
+
+    color: #2E2E2E;
+
+    font-weight: 600;
+
+}
+
