@@ -8,6 +8,13 @@
 html {
     font-family: 'Sora', sans-serif;
 }
+
+.container-pizzas {
+    display: grid;
+    place-content: center;
+
+    row-gap: 112px;
+}
 .card-pizza {
     position: relative;
 
@@ -42,3 +49,4 @@ p, h4 {
 .card-pizza .price {
     font-size: 32px;
 }
+
