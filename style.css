@@ -8,6 +8,7 @@
 
 :root {
     --clr-green: #5C913B;
+    --clr-pink: #FEF6F4;
     --clr-yellow: #FFA200;
     --clr-red: #CF3031;
     --clr-white: #FEF6F4;
@@ -33,6 +34,10 @@ header {
     place-content: center;
 }
 
+header h1 {
+    color: var(--clr-white);
+}
+
 .container-pizzas {
     display: grid;
     place-content: center;
@@ -45,7 +50,7 @@ header {
     height: 275px;
     width: 312px;
 
-    background: #FEF6F4;
+    background: var(--clr-pink);
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -53,10 +58,24 @@ header {
     justify-content: center;
 }
 
+.card-pizza > .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.description > .content p {
+    margin-top: 8px;
+    width: 180px;
+}
+
 .card-pizza > img {
     position: absolute;
     top: -50px;
 }
+
 
 p, h4 {
     text-align: center;
@@ -64,14 +83,31 @@ p, h4 {
 
 .card-pizza h4 {
     font-size: 18px;
+    color: var(--clr-dark-gray);
 }
 
 .card-pizza .content p {
     font-size: 14px;
+    color: var(--clr-grey);
 }
 
 .card-pizza .price {
     font-size: 32px;
+    color: var(--clr-dark-gray);
+}
+
+.card-pizza button {
+    position: absolute;
+
+    bottom: -10px;
+    background: var(--clr-yellow);
+    border-radius: 25px;
+    padding: 8px 20px;
+    border: transparent;
+
+    color: #2E2E2E;
+
+    font-weight: 600;
 }
 .about > .content {
     width: 100%;
