@@ -63,6 +63,9 @@ main h3 {
     text-align: center;
     font-size: 22px;
 }
+button {
+    cursor: pointer;
+}
 
 .container-pizzas {
     display: grid;
@@ -142,8 +145,14 @@ p, h4 {
 
     font-weight: 600;
 }
-.about > .content {
+.about {
+    padding: 32px 24px;
     width: 100%;
+    background: #FCFCFC;
+}
+
+.about > .content {
+    
     max-height: 327px;
     display: flex;
     flex-direction: column;
@@ -151,13 +160,20 @@ p, h4 {
     justify-content: center;
 
     gap: 15px;
-
-    background: #FCFCFC;
 }
 
 .about > .content p {
     text-align: center;
 }
+
+.content #title {
+    font-size: 22px;
+}
+
+#text {
+    font-size: 14px;
+}
+
 .about > .content button {
     background: var(--clr-yellow);
     border-radius: 25px;
@@ -168,5 +184,10 @@ p, h4 {
 
     font-weight: 600;
 
+}
+
+footer {
+    min-height: 63px;
+    width: 100%;
 }
 
