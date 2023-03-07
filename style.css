@@ -22,6 +22,7 @@ html {
 }
 body {
     width: 100vw;
+    height: 100vh;
 }
 
 header {
@@ -37,16 +38,18 @@ header {
 header h1 {
     color: var(--clr-white);
 }
+
 header h1 span:nth-child(1) {
     color: var(--clr-yellow);
 }
+
 header h1 span:nth-child(2) {
     color: var(--clr-red);
 }
+
 header h1 span:nth-child(3) {
     color: var(--clr-green);
 }
-
 
 main {
     display: grid;
@@ -94,12 +97,19 @@ main h3 {
     width: 180px;
 }
 
-.card-pizza > img {
+.card-pizza img, 
+svg {
     position: absolute;
-    top: -50px;
 }
 
+.card-pizza img {
+    top: -60px;
+}
 
+svg {
+    right: 30px;
+    top: -15px;
+}
 p, h4 {
     text-align: center;
 }
