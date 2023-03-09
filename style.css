@@ -243,3 +243,101 @@ footer {
         width: 157px;
     }
 }
+
+
+@media (min-width: 1024px) {
+
+    main {
+        position: relative;
+    }
+
+    .wrapper-container {
+        position: relative;
+    }
+
+    .container-pizzas {
+        padding: 0 40px;
+    }
+
+    main h3 {
+        font-size: 30px;
+    }
+
+    .picture {
+        display: block;
+        position: absolute;
+    }
+
+    .plant-image {
+        top: -50px;
+        left: 0;
+    }
+
+    .fish-image {
+        top: 0;
+        left: 280px;
+    }
+
+    .leaf-image {
+        right: 6px;
+        bottom: 40px;
+        z-index: -1;
+    }
+
+    .fuel-image {
+        position: absolute;
+        top: -60px;
+        right: 60px;
+    }
+
+    .chili-image {
+        bottom: -120px;
+        z-index: 1;
+    }
+
+    .about {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .restaurant-figures {
+        position: relative;
+    }
+
+    .restaurant-image {
+        display: block;
+        width: 400px;
+        height: 500px;
+    }
+
+    .pizza-image {
+        left: -80px;
+        top: 10px;
+    }
+
+    .about > .content {
+        max-width: 500px;
+    }
+
+    .about {
+        gap: 30px;
+    }
+
+    .about > .content {
+        align-items: flex-start;
+    }
+
+    .content #title,
+    .content #text {
+        text-align: start;
+    }
+
+    .image-pizza {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+}
