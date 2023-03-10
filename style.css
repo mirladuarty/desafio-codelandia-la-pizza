@@ -11,24 +11,27 @@
     --clr-pink: #FEF6F4;
     --clr-light-pink: #FCFCFC;
     --clr-yellow: #FFA200;
+    --clr-hover-yellow: #d18604;
     --clr-red: #CF3031;
     --clr-white: #FEF6F4;
     --clr-dark-gray: #2E2E2E;
     --clr-grey: #616161;
-    --transition: all .1s;
+    --transition: all .5s;
 }
 
 html {
     font-family: 'Sora', sans-serif;
+    font-size: 10px;
 }
+
 body {
     max-width: 100vw;
     max-height: 100vh;
 }
 
 header {
-    min-height: 197px;
-    width: 100%;
+    min-height: 19.7rem;
+    max-width: 100%;
 
     background: linear-gradient(0deg, rgba(46, 46, 46, 0.6), rgba(46, 46, 46, 0.6)), url("./assets/images/background.png") center/cover no-repeat;
 
@@ -38,6 +41,7 @@ header {
 
 header h1 {
     color: var(--clr-white);
+    font-size: 4.8rem;
 }
 
 header h1 span:nth-child(1) {
@@ -56,19 +60,22 @@ main {
     display: grid;
     place-content: center;
     grid-template-columns: 100%;
+    row-gap: 7rem;
     width: 100%;
-    padding: 40px 0;
-    row-gap: 70px;
+    padding: 4rem 0 0 0;
 }
 
 main h3 {
-    text-align: center;
-    font-size: 22px;
+    font-size: 2.2rem;
 }
+
+main h3, p, h4 {
+    text-align: center;
+}
+
 button {
     cursor: pointer;
 }
-
 
 .picture {
     display: none;
@@ -78,16 +85,18 @@ button {
     display: grid;
     place-content: center;
 
-    row-gap: 112px;
+    row-gap: 11.2rem;
 }
+
 .card-pizza {
     position: relative;
 
-    height: 275px;
-    width: 312px;
+    height: 27.5rem;
+    width: 31.2rem;
 
     background: var(--clr-pink);
     border-radius: 25px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,12 +107,13 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 1rem;
+
     align-items: center;
-    gap: 10px;
 }
 
 .description > .content p {
-    margin-top: 8px;
+    margin-top: .8rem;
     width: 180px;
 }
 
@@ -111,6 +121,7 @@ button {
 svg {
     position: absolute;
 }
+
 .fish-image {
     display: none;
 }
@@ -123,53 +134,52 @@ svg {
     right: 30px;
     top: -15px;
 }
-p, h4 {
-    text-align: center;
-}
 
 .card-pizza h4 {
-    font-size: 18px;
+    font-size: 1.8rem;
     color: var(--clr-dark-gray);
 }
 
 .card-pizza .content p {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: var(--clr-grey);
 }
 
 .card-pizza .price {
-    font-size: 32px;
+    font-size: 3.2rem;
     color: var(--clr-dark-gray);
 }
 
 .card-pizza button {
     position: absolute;
 
+    transition: var(--transition);
+
     bottom: -10px;
     background: var(--clr-yellow);
     border-radius: 25px;
-    padding: 8px 20px;
+    padding: .8rem 2rem;
     border: transparent;
 
-    color: #2E2E2E;
+    color: var(--clr-dark-gray);
 
     font-weight: 600;
 }
 .about {
-    padding: 32px 24px;
+    padding: 3.2rem 2.4rem;
     width: 100%;
     background: var(--clr-light-pink);
 }
 
 .about > .content {
     
-    max-height: 327px;
+    max-height: 32.7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    gap: 15px;
+    gap: 1.5rem;
 }
 
 .about > .content p {
@@ -180,20 +190,27 @@ p, h4 {
 }
 
 #text {
-    font-size: 14px;
+    font-size: 1.4rem;
 
-    line-height: 26px;
+    line-height: 2.6rem;
 }
 
 .about > .content button {
     background: var(--clr-yellow);
     border-radius: 25px;
-    padding: 8px 20px;
+    padding: .8rem 2rem;
     border: transparent;
 
     color: var(--clr-dark-gray);
 
     font-weight: 600;
+
+    transition: var(--transition);
+}
+
+.card-pizza button:hover,
+.about > .content button:hover {
+    background: var(--clr-hover-yellow);
 }
 
 .restaurant-image {
@@ -201,8 +218,14 @@ p, h4 {
 }
 
 footer {
-    min-height: 63px;
+    height: 6.3rem;
     width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+footer p {
+    font-size: 1.2rem;
 }
 
 #title span:nth-child(1) {
@@ -220,16 +243,16 @@ footer {
 
 @media (min-width: 768px) {
     header {
-        height: 300px;
+        height: 30rem;
     }
 
     header h1 {
-        font-size: 80px;
+        font-size: 8rem;
     }
     
     .container-pizzas {
         grid: repeat(auto-fit, minmax(250px, 275px)) / repeat(auto-fit, minmax(250px, 256px));
-        gap: 75px;
+        gap: 7.5rem;
         place-content: center;
         width: 100%;
     }
@@ -241,6 +264,10 @@ footer {
 
     .card-pizza button {
         width: 157px;
+    }
+
+    footer {
+        max-height: 5rem;
     }
 }
 
@@ -308,8 +335,8 @@ footer {
 
     .restaurant-image {
         display: block;
-        width: 400px;
-        height: 500px;
+        width: 40rem;
+        height: 50rem;
     }
 
     .pizza-image {
@@ -318,11 +345,11 @@ footer {
     }
 
     .about > .content {
-        max-width: 500px;
+        max-width: 50rem;
     }
 
     .about {
-        gap: 30px;
+        gap: 3rem;
     }
 
     .about > .content {
@@ -339,5 +366,4 @@ footer {
         bottom: 0;
         right: 0;
     }
-
 }
